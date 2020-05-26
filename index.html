@@ -23,7 +23,7 @@
 </style>
 </head>
 <body>
-<audio autoplay="autopaly" loop="loop" controls="contros">
+<audio autoplay="autopaly" id="audios">
   <source src="renxi.mp3" type="audio/mp3" />
 </audio>
 <div id="main">
@@ -50,6 +50,9 @@
   </div>
 </div>
 <script>
+	 document.addEventListener('touchstart', function() {
+    document.getElementById('audios').play()
+})
     </script>
 <script>
     (function(){
